@@ -1,0 +1,73 @@
+<!--
+  HEADER COMMENT
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FWM - Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!--Bootstrap CDN link-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!--Home center title-->
+  <div class="container" id="main-heading">
+    <h1 class="home-center-content">Fernando Winfield Murillo</h1>
+    <hr>
+    <h3 class="home-center-content">My Portfolio Site</h3>
+  </div>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!--This is the brand with plain text-->
+        <a href="index.html" class="navbar-brand">FWM</a>
+
+        <!--This is the FWM brand logo picture-->
+        <!-- <a href="index.html" class="navbar-brand" id="nav-brand-algn"><img src="fwmBrandDark.png" alt="FWM Brand" id="nav-brand"></a> -->
+
+      </div>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Exercises</a></li>
+          <li><a href="#">Assignments</a></li>
+
+          <!--This is the code for the dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+          <li><a href="https://www.linkedin.com/in/fernandowinfieldmurillo" id="linked-in-anchor-padding"><img src="linkedInLogoSquare.png" alt="Linked In Logo" id="linked-in-logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!--Bootstrap CDN scripts-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
