@@ -1,39 +1,54 @@
-body {
-  padding-top: 13px;
-  background: url(nycNightPortfolio.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
+/* .navbar-custom {
+  background-color: blueviolet;
+} */
+
+
+.title {
+  display: inline-block;
+  color: rgb(212, 212, 212);
+  font-size: 1.85em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-hr {
-  width: 50%;
+.subtitle {
+  display: inline-block;
+  color: rgb(212, 212, 212);
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.home-center-content {
-  color: #c4c5c6;
-  /* text-shadow: #5a5c60 1px 1px 8px; */
+.block-container {
+  display: inline-block;
+  position: relative;
 }
 
-#main-heading {
+.block-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.textbox {
+  position: absolute;
   text-align: center;
-  padding-top: 2%;
+  height: 25%;
+  width: 50%;
+  right: 0;
+  top: 0;
 }
 
-#nav-brand {
-  width: 70px;
-  height: 35px;
+.textbox:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-#nav-brand-algn {
-  padding: 9px 15px;
+.jumbotron {
+  margin: 5% 20%;
 }
 
 #linked-in-logo {
-  width: 30px;
-  height: 30px;
-}
-
-#linked-in-anchor-padding {
-  padding-top: 10px;
-  padding-bottom: 0;
+  width: 37px;
+  height: 37px;
 }
