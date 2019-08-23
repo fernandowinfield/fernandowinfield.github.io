@@ -25,41 +25,47 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
-
-        <!--Dropdown menu 1-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Exercises
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-
-        <!--Dropdown menu 2-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Assignments
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="FernandoWinfieldMurillo_resume.pdf">Resume</a>
         </li>
       </ul>
     </div>
 
-    <!--Linked In logo-->
-    <div class="ml-auto mr-2">
+        <!--Dropdown menu 1-->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+        
+
+    <!--LinkedIn and GitHub logos-->
+    <div class="mr-2 ml-auto">
       <ul class="navbar-nav">
-        <li><a href="https://www.linkedin.com/in/fernandowinfieldmurillo" id="linked-in-anchor-padding"><img src="linkedInLogoSquare.png" alt="Linked In Logo" id="linked-in-logo"></a></li>
+        <li>
+          <button href="https://www.linkedin.com/in/fernandowinfieldmurillo" class="backgroundlessBtn squareLogo">
+            <img src="linkedInLogoSquare.png" alt="Linked In Logo" class="logoImg"/>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mr-2">
+      <ul class="navbar-nav">
+        <li>
+
+          <button href="https://github.com/fernandowinfield/projects" class="backgroundlessBtn squareLogo">
+            <img src="gitHubLogo.png" alt="Linked In Logo" class="logoImg"/>
+          </button>
+        </li>
       </ul>
     </div>
 
@@ -75,7 +81,7 @@
       <h1 class="title">Fernando Winfield</h1>
       <h3 class="subtitle">My Portfolio Site</h3>
     </div>
-    <img class="block-photo" src="nycNight2Portfolio.JPG" alt="New York City at night, Fernando in middle, unfocused buildings on the background">
+    <img class="block-photo" src="nycNight2Portfolio.JPG" alt="New York City at night, Fernando in middle, unfocused buildings skyline on the background"/>
   </div>
 
   <!--About me jumbotron-->
@@ -83,21 +89,98 @@
     <h1 class="display-4">About me</h1>
     <p>Mexico -> Maryland -> DC Metro Area -> Seattle</p>
     <hr class="my-4">
-    <p class="lead">I am a graduate student from Mexico. I did my undergrad on the East coast in Exercise Science and afterwards worked for 1 year as a strength and conditioning coach. I am currently pursuing my master's in Computer Science at Northeastern University Seattle on a journey to become a software engineer.</p>
-    <p class="lead">Check out more content about my work on UI class by scrolling down or using the menu!</p>
-    <a class="btn btn-info btn-lg" href="#" role="button">Contact me</a>
+    <p class="lead">I am a graduate student from Mexico. I completed my bachelor's degree in Exercise Science and afterwards worked for 1 year as a strength and conditioning coach. I am currently pursuing my master's in Computer Science at Northeastern University Seattle campus on a journey to become a software engineer.</p>
+    <p class="lead">I enjoy building products and services that make people's lives better and as a result let them enjoy the moments that matter the most. Coming from a sports background, I particularly enjoy this process when I work as part of a team.</p>
+    <p class="lead">Check out some of my projects on the button below or the menu bar!</p>
+
+    <!-- Button trigger modal -->
+    <button href="" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+      Contact me
+    </button>
+
+    <button href="projects.html" class="btn btn-info btn-lg inLine">
+      Projects
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Fernando Winfield
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-7 col-xs-12">
+                <img src="headshot.jpg" class="headshotImg"/>
+              </div>
+              <div class="col-md-5 col-xs-12">
+                <button class="backgroundlessBtn clipboardCopy" data-clipboard-target="#location">
+                  <img src="location.png" alt="location" class="contactInfoIcon"/>
+                </button>
+                <p id="location">
+                  Seattle, WA
+                </p>
+                
+                <button class="backgroundlessBtn clipboardCopy" data-clipboard-target="#phone">
+                  <img src="phone.png" alt="phone" id="phoneIcon"/>
+                </button>
+                <p id="phone">
+                  (443) 858-3404
+                </p>
+
+                <button class="backgroundlessBtn clipboardCopy" data-clipboard-target="#email">
+                  <img src="email.png" alt="email" id="emailIcon"/>
+                </button>
+                <p id="email">
+                  fernando.winfield@outlook.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
     <!--Second photo block-->
     <div class="block-container">
-      <img class="block-photo" src="nycNightPortfolio.JPG" alt="New York City at night, Fernando in middle, unfocused buildings on the background">
+      <img class="block-photo" src="nycNightPortfolio.JPG" alt="New York City at night, Fernando in middle, unfocused buildings on the background"/>
     </div>
 
 
-  <!--Bootstrap CDN scripts-->
+  <!--Bootstrap CDN scripts (for general styling)-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Clipboard.js CDN (for copying to clipboard)-->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script>
+    var btns = document.querySelectorAll('.clipboardCopy');
+    var clipboard = new ClipboardJS(btns);
+    clipboard.on('success', function(e) {
+      console.log(e);
+    });
+    clipboard.on('error', function(e) {
+      console.log(e);
+    });
+  </script>
+
+  <!-- Tippy.js CDN (for tooltips) -->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    tippy(".clipboardCopy", {
+      content: "copied to clipboard",
+      trigger: "click"
+    })
+  </script>
 </body>
 </html>

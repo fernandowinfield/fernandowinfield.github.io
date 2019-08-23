@@ -1,0 +1,165 @@
+<!--HEADER COMMENT HERE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Winfield - Portfolio</title>
+
+  <!--Bootstrap CDN stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--My custom stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
+
+    <!--Navbar brand-->
+    <a class="navbar-brand" href="index.html">FWM</a>
+
+    <!--Collapsable navbar items-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="FernandoWinfieldMurillo_resume.pdf">Resume</a>
+        </li>
+      </ul>
+    </div>
+
+        <!--Dropdown menu 1-->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+        
+
+    <!--LinkedIn and GitHub logos-->
+    <div class="mr-2 ml-auto">
+      <ul class="navbar-nav">
+        <li>
+          <button href="https://www.linkedin.com/in/fernandowinfieldmurillo" class="backgroundlessBtn squareLogo">
+            <img src="linkedInLogoSquare.png" alt="Linked In Logo" class="logoImg"/>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mr-2">
+      <ul class="navbar-nav">
+        <li>
+
+          <button href="https://github.com/fernandowinfield/projects" class="backgroundlessBtn squareLogo">
+            <img src="gitHubLogo.png" alt="Linked In Logo" class="logoImg"/>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!--Sandwich button (appears in smaller screens)-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!--About me jumbotron-->
+  <div class="jumbotron">
+    <h1 class="display-4">Projects</h1>
+    <hr class="my-4">
+  </div>
+
+  <!-- Projects grid -->
+  <div class="container">
+    <div class="row customRow">
+      <div class="col-12">
+        <h3>Court Finder App</h3>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <button href="courtFinderAppThumbnail.png" class="backgroundlessBtn">
+          <img src="courtFinderAppThumbnail.png" class="projectImg"/>
+        </button>
+      </div>
+      <div class="col-md-7 col-xs-12">
+        <ul>
+          <li>
+            Built a responsive and accessible user interface with ReactJS and Redux. Styling made with CSS.
+          </li>
+          <li>
+            Implemented the app’s features, like user account creation, login, court search, and players status, using NodeJS and Firebase’s authentication service. Features under construction: map API integration, real-time court activity, and social connectivity.
+          </li>
+          <li>
+            Integrated a database into the app to store user and courts data using Firebase NoSQL database service.
+          </li>
+          <li>
+            Deployed the web application’s user interface and server with Heroku.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row customRow">
+      <div class="col-12">
+        <h3>Inventory System</h3>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <button href="inventorySystemThumbnail.png" class="backgroundlessBtn">
+          <img src="inventorySystemThumbnail.png" class="projectImg"/>
+        </button>
+      </div>
+      <div class="col-md-7 col-xs-12">
+        <ul>
+          <li>
+            Designed a backend interface with Java to manage the inventory operations of a supermarket or similar store.
+          </li>
+          <li>
+            Integrated the inventory portion of the system with the shopping cart and checkout features developed by the rest of the team. 
+          </li>
+          <li>
+            Managed the project using Apache Maven and Git and wrote unit tests using JUnit to achieve code test coverage of 90%.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row customRow">
+      <div class="col-12">
+        <h3>Mini Pac-Man Game</h3>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <button button href="pacManThumbnail.png" class="backgroundlessBtn">
+          <img src="pacManThumbnail.png" id="pacmanThumbnail"/>
+        </button>
+      </div>
+      <div class="col-md-7 col-xs-12">
+        <ul>
+          <li>
+            Created the game’s user interface with the Python mode of the Processing programming platform.
+          </li>
+          <li>
+            Implemented the game functionality, including Pacman’s (user) movement mechanics and the ghost’s (CPU) chasing algorithm with Python.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--Bootstrap CDN scripts (for general styling)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
