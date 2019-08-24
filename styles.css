@@ -64,8 +64,9 @@
 }
 
 .logoImg {
-  max-width: 100%;
-  max-height: 100%;
+  width: 37px;
+  height: 37px;
+  padding: 0;
 }
 
 .backgroundlessBtn {
@@ -86,9 +87,9 @@
   margin: 3em 0;
 }
 
-.horCenter {
-  /* margin: 0 auto;
-  width: 100%; */
+.linkBtn {
+  height: 4em;
+  width: 6em;
 }
 
 #phoneIcon {
@@ -102,6 +103,6 @@
 }
 
 #pacmanThumbnail {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 70%;
+  max-height: 70%;
 }
