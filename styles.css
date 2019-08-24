@@ -92,6 +92,15 @@
   width: 6em;
 }
 
+.footnote {
+  margin-top: 9em;
+  font-size: 15%;
+  /* transform: rotate(90deg);
+  margin-left: 10px;
+  margin-top: 10px;
+  white-space: nowrap; */
+}
+
 #phoneIcon {
   max-width: 1.5em;
   max-width: 1.5em;
